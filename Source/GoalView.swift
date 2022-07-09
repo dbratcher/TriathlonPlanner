@@ -18,7 +18,7 @@ struct EditableTimeView: View {
 struct HeaderView: View {
     var body: some View {
         Label("Goals", systemImage: "timer")
-            .font(.headline)
+            .font(.title)
     }
 }
 
@@ -26,9 +26,11 @@ struct RaceTypeView: View {
     var body: some View {
         HStack {
             Text("Race Type:")
+                .font(.headline)
             Text("Iron Man")
                 .foregroundColor(.accentColor)
                 .underline()
+                .font(.headline)
         }
     }
 }
@@ -40,8 +42,10 @@ struct SportView: View {
         VStack {
             HStack {
                 Text(sportName)
+                    .font(.headline)
                 Spacer()
                 Text("1 mile")
+                    .font(.subheadline)
             }
             HStack {
                 EditableTimeView()
@@ -60,6 +64,7 @@ struct TransitionView: View {
         HStack {
             Text("Transition 1")
                 .foregroundColor(.secondary)
+                .font(.headline)
             EditableTimeView()
         }
     }
