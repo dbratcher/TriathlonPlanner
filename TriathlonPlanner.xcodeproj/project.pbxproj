@@ -10,8 +10,10 @@
 		EA8554B9287A1F9F00218C05 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554B8287A1F9F00218C05 /* Tests.swift */; };
 		EA8554BB287A1F9F00218C05 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554BA287A1F9F00218C05 /* LaunchTests.swift */; };
 		EA8554C8287A1F9F00218C05 /* TriathlonPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554A0287A1F9E00218C05 /* TriathlonPlannerApp.swift */; };
-		EA8554CA287A1F9F00218C05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554A1287A1F9E00218C05 /* ContentView.swift */; };
 		EA8554CC287A1F9F00218C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8554A2287A1F9F00218C05 /* Assets.xcassets */; };
+		EADD615B287A2D120065256E /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD615A287A2D120065256E /* GoalView.swift */; };
+		EADD615D287A2D2D0065256E /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD615C287A2D2D0065256E /* TrainingView.swift */; };
+		EADD615F287A2D4A0065256E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD615E287A2D4A0065256E /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,13 +28,15 @@
 
 /* Begin PBXFileReference section */
 		EA8554A0287A1F9E00218C05 /* TriathlonPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriathlonPlannerApp.swift; sourceTree = "<group>"; };
-		EA8554A1287A1F9E00218C05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA8554A2287A1F9F00218C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA8554A7287A1F9F00218C05 /* TriathlonPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriathlonPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8554B4287A1F9F00218C05 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8554B8287A1F9F00218C05 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		EA8554BA287A1F9F00218C05 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		EA8554DD287A203700218C05 /* TriathlonPlanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TriathlonPlanner.entitlements; sourceTree = "<group>"; };
+		EADD615A287A2D120065256E /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
+		EADD615C287A2D2D0065256E /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		EADD615E287A2D4A0065256E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				EA8554A0287A1F9E00218C05 /* TriathlonPlannerApp.swift */,
-				EA8554A1287A1F9E00218C05 /* ContentView.swift */,
+				EADD615A287A2D120065256E /* GoalView.swift */,
+				EADD615C287A2D2D0065256E /* TrainingView.swift */,
+				EADD615E287A2D4A0065256E /* SettingsView.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -198,7 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA8554CA287A1F9F00218C05 /* ContentView.swift in Sources */,
+				EADD615F287A2D4A0065256E /* SettingsView.swift in Sources */,
+				EADD615D287A2D2D0065256E /* TrainingView.swift in Sources */,
+				EADD615B287A2D120065256E /* GoalView.swift in Sources */,
 				EA8554C8287A1F9F00218C05 /* TriathlonPlannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

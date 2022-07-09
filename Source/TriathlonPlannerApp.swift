@@ -11,7 +11,19 @@ import SwiftUI
 struct TriathlonPlannerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                GoalView().tabItem {
+                    Label("Goals", systemImage: "timer")
+                }
+
+                TrainingView().tabItem {
+                    Label("Training", systemImage: "calendar")
+                }
+                
+                SettingsView().tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
+            }
         }
     }
 }
