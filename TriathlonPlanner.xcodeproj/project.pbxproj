@@ -56,7 +56,6 @@
 		EA85549A287A1F9E00218C05 = {
 			isa = PBXGroup;
 			children = (
-				EA8554DD287A203700218C05 /* TriathlonPlanner.entitlements */,
 				EA8554DC287A201600218C05 /* Resources */,
 				EA85549F287A1F9E00218C05 /* Source */,
 				EA8554B7287A1F9F00218C05 /* Tests */,
@@ -94,6 +93,7 @@
 		EA8554DC287A201600218C05 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EA8554DD287A203700218C05 /* TriathlonPlanner.entitlements */,
 				EA8554A2287A1F9F00218C05 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -337,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TriathlonPlanner.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Resources/TriathlonPlanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CD69SP6A6Z;
@@ -370,7 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TriathlonPlanner.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Resources/TriathlonPlanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CD69SP6A6Z;
