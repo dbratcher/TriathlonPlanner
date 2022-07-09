@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA8554B9287A1F9F00218C05 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554B8287A1F9F00218C05 /* Tests_iOS.swift */; };
+		EA8554BB287A1F9F00218C05 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554BA287A1F9F00218C05 /* Tests_iOSLaunchTests.swift */; };
+		EA8554C5287A1F9F00218C05 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554C4287A1F9F00218C05 /* Tests_macOS.swift */; };
+		EA8554C7287A1F9F00218C05 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554C6287A1F9F00218C05 /* Tests_macOSLaunchTests.swift */; };
+		EA8554C8287A1F9F00218C05 /* TriathlonPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554A0287A1F9E00218C05 /* TriathlonPlannerApp.swift */; };
+		EA8554C9287A1F9F00218C05 /* TriathlonPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554A0287A1F9E00218C05 /* TriathlonPlannerApp.swift */; };
+		EA8554CA287A1F9F00218C05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554A1287A1F9E00218C05 /* ContentView.swift */; };
+		EA8554CB287A1F9F00218C05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554A1287A1F9E00218C05 /* ContentView.swift */; };
+		EA8554CC287A1F9F00218C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8554A2287A1F9F00218C05 /* Assets.xcassets */; };
+		EA8554CD287A1F9F00218C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8554A2287A1F9F00218C05 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA8554B5287A1F9F00218C05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA85549B287A1F9E00218C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA8554A6287A1F9F00218C05;
+			remoteInfo = "TriathlonPlanner (iOS)";
+		};
+		EA8554C1287A1F9F00218C05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA85549B287A1F9E00218C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA8554AC287A1F9F00218C05;
+			remoteInfo = "TriathlonPlanner (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA8554A0287A1F9E00218C05 /* TriathlonPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriathlonPlannerApp.swift; sourceTree = "<group>"; };
+		EA8554A1287A1F9E00218C05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA8554A2287A1F9F00218C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA8554A7287A1F9F00218C05 /* TriathlonPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriathlonPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8554AD287A1F9F00218C05 /* TriathlonPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriathlonPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8554AF287A1F9F00218C05 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		EA8554B4287A1F9F00218C05 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8554B8287A1F9F00218C05 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		EA8554BA287A1F9F00218C05 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		EA8554C0287A1F9F00218C05 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8554C4287A1F9F00218C05 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		EA8554C6287A1F9F00218C05 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA8554A4287A1F9F00218C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8554AA287A1F9F00218C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8554B1287A1F9F00218C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8554BD287A1F9F00218C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA85549A287A1F9E00218C05 = {
+			isa = PBXGroup;
+			children = (
+				EA85549F287A1F9E00218C05 /* Shared */,
+				EA8554AE287A1F9F00218C05 /* macOS */,
+				EA8554B7287A1F9F00218C05 /* Tests iOS */,
+				EA8554C3287A1F9F00218C05 /* Tests macOS */,
+				EA8554A8287A1F9F00218C05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA85549F287A1F9E00218C05 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EA8554A0287A1F9E00218C05 /* TriathlonPlannerApp.swift */,
+				EA8554A1287A1F9E00218C05 /* ContentView.swift */,
+				EA8554A2287A1F9F00218C05 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EA8554A8287A1F9F00218C05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA8554A7287A1F9F00218C05 /* TriathlonPlanner.app */,
+				EA8554AD287A1F9F00218C05 /* TriathlonPlanner.app */,
+				EA8554B4287A1F9F00218C05 /* Tests iOS.xctest */,
+				EA8554C0287A1F9F00218C05 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA8554AE287A1F9F00218C05 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				EA8554AF287A1F9F00218C05 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		EA8554B7287A1F9F00218C05 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EA8554B8287A1F9F00218C05 /* Tests_iOS.swift */,
+				EA8554BA287A1F9F00218C05 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		EA8554C3287A1F9F00218C05 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				EA8554C4287A1F9F00218C05 /* Tests_macOS.swift */,
+				EA8554C6287A1F9F00218C05 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA8554A6287A1F9F00218C05 /* TriathlonPlanner (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA8554D0287A1F9F00218C05 /* Build configuration list for PBXNativeTarget "TriathlonPlanner (iOS)" */;
+			buildPhases = (
+				EA8554A3287A1F9F00218C05 /* Sources */,
+				EA8554A4287A1F9F00218C05 /* Frameworks */,
+				EA8554A5287A1F9F00218C05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TriathlonPlanner (iOS)";
+			productName = "TriathlonPlanner (iOS)";
+			productReference = EA8554A7287A1F9F00218C05 /* TriathlonPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA8554AC287A1F9F00218C05 /* TriathlonPlanner (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA8554D3287A1F9F00218C05 /* Build configuration list for PBXNativeTarget "TriathlonPlanner (macOS)" */;
+			buildPhases = (
+				EA8554A9287A1F9F00218C05 /* Sources */,
+				EA8554AA287A1F9F00218C05 /* Frameworks */,
+				EA8554AB287A1F9F00218C05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TriathlonPlanner (macOS)";
+			productName = "TriathlonPlanner (macOS)";
+			productReference = EA8554AD287A1F9F00218C05 /* TriathlonPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA8554B3287A1F9F00218C05 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA8554D6287A1F9F00218C05 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				EA8554B0287A1F9F00218C05 /* Sources */,
+				EA8554B1287A1F9F00218C05 /* Frameworks */,
+				EA8554B2287A1F9F00218C05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA8554B6287A1F9F00218C05 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = EA8554B4287A1F9F00218C05 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EA8554BF287A1F9F00218C05 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA8554D9287A1F9F00218C05 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				EA8554BC287A1F9F00218C05 /* Sources */,
+				EA8554BD287A1F9F00218C05 /* Frameworks */,
+				EA8554BE287A1F9F00218C05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA8554C2287A1F9F00218C05 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = EA8554C0287A1F9F00218C05 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA85549B287A1F9E00218C05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EA8554A6287A1F9F00218C05 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					EA8554AC287A1F9F00218C05 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					EA8554B3287A1F9F00218C05 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = EA8554A6287A1F9F00218C05;
+					};
+					EA8554BF287A1F9F00218C05 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = EA8554AC287A1F9F00218C05;
+					};
+				};
+			};
+			buildConfigurationList = EA85549E287A1F9E00218C05 /* Build configuration list for PBXProject "TriathlonPlanner" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA85549A287A1F9E00218C05;
+			productRefGroup = EA8554A8287A1F9F00218C05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA8554A6287A1F9F00218C05 /* TriathlonPlanner (iOS) */,
+				EA8554AC287A1F9F00218C05 /* TriathlonPlanner (macOS) */,
+				EA8554B3287A1F9F00218C05 /* Tests iOS */,
+				EA8554BF287A1F9F00218C05 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA8554A5287A1F9F00218C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8554CC287A1F9F00218C05 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8554AB287A1F9F00218C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8554CD287A1F9F00218C05 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8554B2287A1F9F00218C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8554BE287A1F9F00218C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA8554A3287A1F9F00218C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8554CA287A1F9F00218C05 /* ContentView.swift in Sources */,
+				EA8554C8287A1F9F00218C05 /* TriathlonPlannerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8554A9287A1F9F00218C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8554CB287A1F9F00218C05 /* ContentView.swift in Sources */,
+				EA8554C9287A1F9F00218C05 /* TriathlonPlannerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8554B0287A1F9F00218C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8554BB287A1F9F00218C05 /* Tests_iOSLaunchTests.swift in Sources */,
+				EA8554B9287A1F9F00218C05 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8554BC287A1F9F00218C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8554C7287A1F9F00218C05 /* Tests_macOSLaunchTests.swift in Sources */,
+				EA8554C5287A1F9F00218C05 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA8554B6287A1F9F00218C05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA8554A6287A1F9F00218C05 /* TriathlonPlanner (iOS) */;
+			targetProxy = EA8554B5287A1F9F00218C05 /* PBXContainerItemProxy */;
+		};
+		EA8554C2287A1F9F00218C05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA8554AC287A1F9F00218C05 /* TriathlonPlanner (macOS) */;
+			targetProxy = EA8554C1287A1F9F00218C05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EA8554CE287A1F9F00218C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA8554CF287A1F9F00218C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EA8554D1287A1F9F00218C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD69SP6A6Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewbratcher.TriathlonPlanner;
+				PRODUCT_NAME = TriathlonPlanner;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA8554D2287A1F9F00218C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD69SP6A6Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewbratcher.TriathlonPlanner;
+				PRODUCT_NAME = TriathlonPlanner;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA8554D4287A1F9F00218C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD69SP6A6Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewbratcher.TriathlonPlanner;
+				PRODUCT_NAME = TriathlonPlanner;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EA8554D5287A1F9F00218C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD69SP6A6Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewbratcher.TriathlonPlanner;
+				PRODUCT_NAME = TriathlonPlanner;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EA8554D7287A1F9F00218C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD69SP6A6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.drewbratcher.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TriathlonPlanner (iOS)";
+			};
+			name = Debug;
+		};
+		EA8554D8287A1F9F00218C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD69SP6A6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.drewbratcher.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TriathlonPlanner (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA8554DA287A1F9F00218C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD69SP6A6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.drewbratcher.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "TriathlonPlanner (macOS)";
+			};
+			name = Debug;
+		};
+		EA8554DB287A1F9F00218C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD69SP6A6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.drewbratcher.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "TriathlonPlanner (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA85549E287A1F9E00218C05 /* Build configuration list for PBXProject "TriathlonPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8554CE287A1F9F00218C05 /* Debug */,
+				EA8554CF287A1F9F00218C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA8554D0287A1F9F00218C05 /* Build configuration list for PBXNativeTarget "TriathlonPlanner (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8554D1287A1F9F00218C05 /* Debug */,
+				EA8554D2287A1F9F00218C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA8554D3287A1F9F00218C05 /* Build configuration list for PBXNativeTarget "TriathlonPlanner (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8554D4287A1F9F00218C05 /* Debug */,
+				EA8554D5287A1F9F00218C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA8554D6287A1F9F00218C05 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8554D7287A1F9F00218C05 /* Debug */,
+				EA8554D8287A1F9F00218C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA8554D9287A1F9F00218C05 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8554DA287A1F9F00218C05 /* Debug */,
+				EA8554DB287A1F9F00218C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA85549B287A1F9E00218C05 /* Project object */;
+}
