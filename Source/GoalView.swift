@@ -7,6 +7,48 @@
 
 import SwiftUI
 
+struct RaceTypeModel: Hashable {
+    var name: String
+    var swimDistance: String
+    var bikeDistance: String
+    var runDistance: String
+    
+    static let raceTypes = [
+        RaceTypeModel(
+            name: "Iron Man",
+            swimDistance: "2.4 miles",
+            bikeDistance: "112 miles",
+            runDistance: "26.2 miles"
+        ),
+        RaceTypeModel(
+            name: "Half Iron Man",
+            swimDistance: "1.2 miles",
+            bikeDistance: "56 miles",
+            runDistance: "13.1 miles"
+        ),
+        RaceTypeModel(
+            name: "Olympic",
+            swimDistance: "0.93 miles",
+            bikeDistance: "24.8 miles",
+            runDistance: "6.2 miles"
+        ),
+        RaceTypeModel(
+            name: "Sprint",
+            swimDistance: "0.5 miles",
+            bikeDistance: "12.4 miles",
+            runDistance: "3.1 miles"
+        ),
+        RaceTypeModel(
+            name: "Custom",
+            swimDistance: "100 yards",
+            bikeDistance: "5 miles",
+            runDistance: "1 mile"
+        )
+    ]
+}
+
+
+
 struct EditableTimeView: View {
     var body: some View {
         Text("02:00")
@@ -23,20 +65,26 @@ struct HeaderView: View {
 }
 
 struct RaceTypeView: View {
+    @Binding var raceType: RaceTypeModel
+    
     var body: some View {
         HStack {
             Text("Race Type:")
                 .font(.headline)
-            Text("Iron Man")
-                .foregroundColor(.accentColor)
-                .underline()
-                .font(.headline)
+            Picker("Race Type", selection: $raceType) {
+                ForEach(RaceTypeModel.raceTypes, id: \.self) {
+                    Text($0.name)
+                }
+            }
+            .frame(width:100)
         }
+        .frame(maxWidth:200)
     }
 }
 
 struct SportView: View {
     var sportName: String
+    var distance: String
     
     var body: some View {
         VStack {
@@ -44,7 +92,7 @@ struct SportView: View {
                 Text(sportName)
                     .font(.headline)
                 Spacer()
-                Text("1 mile")
+                Text(distance)
                     .font(.subheadline)
             }
             HStack {
@@ -80,27 +128,30 @@ struct TotalTimeView: View {
 }
 
 struct AllLegsView: View {
+    @Binding var raceType: RaceTypeModel
     var body: some View {
-        SportView(sportName: "Swim")
+        SportView(sportName: "Swim", distance: raceType.swimDistance)
         Spacer()
         TransitionView()
         Spacer()
-        SportView(sportName: "Bike")
+        SportView(sportName: "Bike", distance: raceType.bikeDistance)
         Spacer()
         TransitionView()
         Spacer()
-        SportView(sportName: "Run")
+        SportView(sportName: "Run", distance: raceType.runDistance)
     }
 }
 
 struct GoalView: View {
+    @State private var raceType: RaceTypeModel = RaceTypeModel.raceTypes[0]
+    
     var body: some View {
         VStack {
             HeaderView()
             Spacer()
-            RaceTypeView()
+            RaceTypeView(raceType: $raceType)
             Spacer()
-            AllLegsView()
+            AllLegsView(raceType: $raceType)
             Spacer()
             TotalTimeView()
         }
