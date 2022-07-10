@@ -7,51 +7,11 @@
 
 import SwiftUI
 
-struct RaceTypeModel: Hashable {
-    var name: String
-    var swimDistance: String
-    var bikeDistance: String
-    var runDistance: String
-    
-    static let raceTypes = [
-        RaceTypeModel(
-            name: "Iron Man",
-            swimDistance: "2.4 miles",
-            bikeDistance: "112 miles",
-            runDistance: "26.2 miles"
-        ),
-        RaceTypeModel(
-            name: "Half Iron Man",
-            swimDistance: "1.2 miles",
-            bikeDistance: "56 miles",
-            runDistance: "13.1 miles"
-        ),
-        RaceTypeModel(
-            name: "Olympic",
-            swimDistance: "0.93 miles",
-            bikeDistance: "24.8 miles",
-            runDistance: "6.2 miles"
-        ),
-        RaceTypeModel(
-            name: "Sprint",
-            swimDistance: "0.5 miles",
-            bikeDistance: "12.4 miles",
-            runDistance: "3.1 miles"
-        ),
-        RaceTypeModel(
-            name: "Custom",
-            swimDistance: "100 yards",
-            bikeDistance: "5 miles",
-            runDistance: "1 mile"
-        )
-    ]
-}
-
-
-
 struct EditableTimeView: View {
+    var time: String
+    
     var body: some View {
-        Text("02:00")
+        Text(time)
             .foregroundColor(.accentColor)
             .underline()
     }
@@ -96,11 +56,11 @@ struct SportView: View {
                     .font(.subheadline)
             }
             HStack {
-                EditableTimeView()
+                EditableTimeView(time: "TBD")
                 Text("/ 50yds")
                 Spacer()
                 Text("Total:")
-                EditableTimeView()
+                EditableTimeView(time: "TBD")
             }
         }
         .frame(maxWidth: 350)
@@ -108,12 +68,14 @@ struct SportView: View {
 }
 
 struct TransitionView: View {
+    var transition: TransitionModel
+    
     var body: some View {
         HStack {
-            Text("Transition 1")
+            Text(transition.name)
                 .foregroundColor(.secondary)
                 .font(.headline)
-            EditableTimeView()
+            EditableTimeView(time: transition.time)
         }
     }
 }
@@ -132,11 +94,11 @@ struct AllLegsView: View {
     var body: some View {
         SportView(sportName: "Swim", distance: raceType.swimDistance)
         Spacer()
-        TransitionView()
+        TransitionView(transition: TransitionModel(name: "Transition 1", time: "05:00"))
         Spacer()
         SportView(sportName: "Bike", distance: raceType.bikeDistance)
         Spacer()
-        TransitionView()
+        TransitionView(transition: TransitionModel(name: "Transition 2", time: "05:00"))
         Spacer()
         SportView(sportName: "Run", distance: raceType.runDistance)
     }
