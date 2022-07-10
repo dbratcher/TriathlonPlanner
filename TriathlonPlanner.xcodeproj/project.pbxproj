@@ -17,6 +17,9 @@
 		EADD6162287A53940065256E /* RaceTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6161287A53940065256E /* RaceTypeModel.swift */; };
 		EADD6166287A54C80065256E /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6165287A54C80065256E /* TransitionModel.swift */; };
 		EAECC2E8287B40340094DAAF /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2E7287B40340094DAAF /* TimeModel.swift */; };
+		EAECC2EB287B4A820094DAAF /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2EA287B4A820094DAAF /* TimePickerView.swift */; };
+		EAECC2ED287B4AB10094DAAF /* EditableTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2EC287B4AB10094DAAF /* EditableTimeView.swift */; };
+		EAECC2EF287B4AD80094DAAF /* RaceTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2EE287B4AD80094DAAF /* RaceTypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		EADD6161287A53940065256E /* RaceTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTypeModel.swift; sourceTree = "<group>"; };
 		EADD6165287A54C80065256E /* TransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
 		EAECC2E7287B40340094DAAF /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		EAECC2EA287B4A820094DAAF /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		EAECC2EC287B4AB10094DAAF /* EditableTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableTimeView.swift; sourceTree = "<group>"; };
+		EAECC2EE287B4AD80094DAAF /* RaceTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 		EA85549F287A1F9E00218C05 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				EAECC2E9287B4A780094DAAF /* InputViews */,
 				EADD6160287A53880065256E /* Models */,
 				EA8554A0287A1F9E00218C05 /* TriathlonPlannerApp.swift */,
 				EADD615A287A2D120065256E /* GoalView.swift */,
@@ -120,6 +127,16 @@
 				EAECC2E7287B40340094DAAF /* TimeModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EAECC2E9287B4A780094DAAF /* InputViews */ = {
+			isa = PBXGroup;
+			children = (
+				EAECC2EA287B4A820094DAAF /* TimePickerView.swift */,
+				EAECC2EC287B4AB10094DAAF /* EditableTimeView.swift */,
+				EAECC2EE287B4AD80094DAAF /* RaceTypeView.swift */,
+			);
+			path = InputViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAECC2EB287B4A820094DAAF /* TimePickerView.swift in Sources */,
+				EAECC2ED287B4AB10094DAAF /* EditableTimeView.swift in Sources */,
 				EADD6166287A54C80065256E /* TransitionModel.swift in Sources */,
 				EADD615F287A2D4A0065256E /* SettingsView.swift in Sources */,
 				EADD615D287A2D2D0065256E /* TrainingView.swift in Sources */,
@@ -228,6 +247,7 @@
 				EADD615B287A2D120065256E /* GoalView.swift in Sources */,
 				EA8554C8287A1F9F00218C05 /* TriathlonPlannerApp.swift in Sources */,
 				EADD6162287A53940065256E /* RaceTypeModel.swift in Sources */,
+				EAECC2EF287B4AD80094DAAF /* RaceTypeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-struct EditableTimeView: View {
-    var time: String
-    
-    var body: some View {
-        Text(time)
-            .foregroundColor(.accentColor)
-            .underline()
-    }
-}
 
 struct HeaderView: View {
     var body: some View {
@@ -24,23 +15,6 @@ struct HeaderView: View {
     }
 }
 
-struct RaceTypeView: View {
-    @Binding var raceType: RaceTypeModel
-    
-    var body: some View {
-        HStack {
-            Text("Race Type:")
-                .font(.headline)
-            Picker("Race Type", selection: $raceType) {
-                ForEach(RaceTypeModel.raceTypes, id: \.self) {
-                    Text($0.name)
-                }
-            }
-            .frame(width:100)
-        }
-        .frame(maxWidth:200)
-    }
-}
 
 struct SportView: View {
     var sportName: String
