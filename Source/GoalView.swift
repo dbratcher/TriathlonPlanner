@@ -75,7 +75,7 @@ struct TransitionView: View {
             Text(transition.name)
                 .foregroundColor(.secondary)
                 .font(.headline)
-            EditableTimeView(time: transition.time)
+            EditableTimeView(time: transition.time.mm_ss_format)
         }
     }
 }
@@ -94,11 +94,11 @@ struct AllLegsView: View {
     var body: some View {
         SportView(sportName: "Swim", distance: raceType.swimDistance)
         Spacer()
-        TransitionView(transition: TransitionModel(name: "Transition 1", time: "05:00"))
+        TransitionView(transition: TransitionModel(name: "Transition 1", time: TimeModel(hours: 0, minutes: 5, seconds: 0)))
         Spacer()
         SportView(sportName: "Bike", distance: raceType.bikeDistance)
         Spacer()
-        TransitionView(transition: TransitionModel(name: "Transition 2", time: "05:00"))
+        TransitionView(transition: TransitionModel(name: "Transition 2", time: TimeModel(hours: 0, minutes: 5, seconds: 0)))
         Spacer()
         SportView(sportName: "Run", distance: raceType.runDistance)
     }

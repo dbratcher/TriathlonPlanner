@@ -7,5 +7,5 @@
 
 struct TransitionModel {
     var name: String
-    var time: String
+    var time: TimeModel
 }

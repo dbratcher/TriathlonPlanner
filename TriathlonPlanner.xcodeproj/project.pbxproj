@@ -16,6 +16,7 @@
 		EADD615F287A2D4A0065256E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD615E287A2D4A0065256E /* SettingsView.swift */; };
 		EADD6162287A53940065256E /* RaceTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6161287A53940065256E /* RaceTypeModel.swift */; };
 		EADD6166287A54C80065256E /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6165287A54C80065256E /* TransitionModel.swift */; };
+		EAECC2E8287B40340094DAAF /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2E7287B40340094DAAF /* TimeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		EADD615E287A2D4A0065256E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EADD6161287A53940065256E /* RaceTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTypeModel.swift; sourceTree = "<group>"; };
 		EADD6165287A54C80065256E /* TransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
+		EAECC2E7287B40340094DAAF /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				EADD6161287A53940065256E /* RaceTypeModel.swift */,
 				EADD6165287A54C80065256E /* TransitionModel.swift */,
+				EAECC2E7287B40340094DAAF /* TimeModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				EADD6166287A54C80065256E /* TransitionModel.swift in Sources */,
 				EADD615F287A2D4A0065256E /* SettingsView.swift in Sources */,
 				EADD615D287A2D2D0065256E /* TrainingView.swift in Sources */,
+				EAECC2E8287B40340094DAAF /* TimeModel.swift in Sources */,
 				EADD615B287A2D120065256E /* GoalView.swift in Sources */,
 				EA8554C8287A1F9F00218C05 /* TriathlonPlannerApp.swift in Sources */,
 				EADD6162287A53940065256E /* RaceTypeModel.swift in Sources */,
