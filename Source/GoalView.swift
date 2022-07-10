@@ -41,15 +41,29 @@ struct SportView: View {
     }
 }
 
+struct TimeButtonView: View {
+    @ObservedObject var time: TimeModel
+    @State private var showingPopover = false
+    
+    var body: some View {
+        Button("\(time.mm_ss_format)") {
+            showingPopover = true
+        }
+        .popover(isPresented: $showingPopover) {
+            TimePickerView(showHours: false, time: time)
+        }
+    }
+}
+
 struct TransitionView: View {
-    var transition: TransitionModel
+    @ObservedObject var transition: TransitionModel
     
     var body: some View {
         HStack {
             Text(transition.name)
                 .foregroundColor(.secondary)
                 .font(.headline)
-            EditableTimeView(time: transition.time.mm_ss_format)
+            TimeButtonView(time: transition.time)
         }
     }
 }
@@ -64,15 +78,18 @@ struct TotalTimeView: View {
 }
 
 struct AllLegsView: View {
+    @StateObject var transition1 = TransitionModel(name: "Transition 1", time: TimeModel(hours: 0, minutes: 5, seconds: 0))
+    @StateObject var transition2 = TransitionModel(name: "Transition 2", time: TimeModel(hours: 0, minutes: 5, seconds: 0))
+    
     @Binding var raceType: RaceTypeModel
     var body: some View {
         SportView(sportName: "Swim", distance: raceType.swimDistance)
         Spacer()
-        TransitionView(transition: TransitionModel(name: "Transition 1", time: TimeModel(hours: 0, minutes: 5, seconds: 0)))
+        TransitionView(transition: transition1)
         Spacer()
         SportView(sportName: "Bike", distance: raceType.bikeDistance)
         Spacer()
-        TransitionView(transition: TransitionModel(name: "Transition 2", time: TimeModel(hours: 0, minutes: 5, seconds: 0)))
+        TransitionView(transition: transition2)
         Spacer()
         SportView(sportName: "Run", distance: raceType.runDistance)
     }

@@ -5,10 +5,12 @@
 //  Created by Drew Bratcher on 7/10/22.
 //
 
-struct TimeModel {
-    let hours: Int
-    let minutes: Int
-    let seconds: Int
+import Combine
+
+class TimeModel: ObservableObject {
+    @Published var hours: Int
+    @Published var minutes: Int
+    @Published var seconds: Int
     
     init(hours: Int, minutes: Int, seconds: Int) {
         assert(hours >= 0, "Hours must be greater than or equal to 0 for a time")
@@ -22,7 +24,7 @@ struct TimeModel {
     }
     
     var mm_ss_format: String {
-        return String(format: "%02d:%02d", minutes, seconds)
+        return String(format: "%d:%02d", minutes, seconds)
     }
     
     var hh_mm_ss_format: String {

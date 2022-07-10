@@ -16,42 +16,43 @@ extension UIPickerView {
 }
 
 struct TimePickerView: View {
+    var showHours: Bool = false
+    
+    @ObservedObject var time: TimeModel
     
     private let hoursArray = [Int](0..<24)
     private let minutesArray = [Int](0..<60)
     private let secondsArray = [Int](0..<60)
     
-    @State var hourSelection: Int = 0
-    @State var minutesSelection: Int = 0
-    @State var secondsSelection: Int = 0
-    
-    var time: TimeModel {
-        return TimeModel(hours: hourSelection, minutes: minutesSelection, seconds: secondsSelection)
-    }
-    
     var body: some View {
         VStack {
-            Text(time.hh_mm_ss_format)
-                .font(.title)
+            if showHours {
+                Text(time.hh_mm_ss_format)
+                    .font(.title)
+            } else {
+                Text(time.mm_ss_format)
+                    .font(.title)
+            }
             HStack {
-                
-                HStack {
-                    Picker("Hours", selection: $hourSelection) {
-                        ForEach(hoursArray, id: \.self) {
-                            Text("\($0)")
+                if showHours {
+                    HStack {
+                        Picker("Hours", selection: $time.hours) {
+                            ForEach(hoursArray, id: \.self) {
+                                Text("\($0)")
+                            }
                         }
+                        .pickerStyle(.wheel)
+                        .frame(width: 70)
+                        .labelsHidden()
+                        .compositingGroup()
+                        .clipped()
+                        
+                        Text("hours")
                     }
-                    .pickerStyle(.wheel)
-                    .frame(width: 70)
-                    .labelsHidden()
-                    .compositingGroup()
-                    .clipped()
-                    
-                    Text("hours")
                 }
                 
                 HStack {
-                    Picker("Minutes", selection: $minutesSelection) {
+                    Picker("Minutes", selection: $time.minutes) {
                         ForEach(minutesArray, id: \.self) {
                             Text("\($0)")
                         }
@@ -66,7 +67,7 @@ struct TimePickerView: View {
                 }
                 
                 HStack {
-                    Picker("Seconds", selection: $secondsSelection) {
+                    Picker("Seconds", selection: $time.seconds) {
                         ForEach(secondsArray, id: \.self) {
                             Text("\($0)")
                         }
@@ -86,7 +87,7 @@ struct TimePickerView: View {
 
 struct TimePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimePickerView()
+        TimePickerView(time: TimeModel(hours: 1, minutes: 1, seconds: 1))
     }
 }
 
