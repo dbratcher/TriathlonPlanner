@@ -24,4 +24,8 @@ struct TimeModel {
     var mm_ss_format: String {
         return String(format: "%02d:%02d", minutes, seconds)
     }
+    
+    var hh_mm_ss_format: String {
+        return String(format: "%d:%02d:%02d", hours, minutes, seconds)
+    }
 }

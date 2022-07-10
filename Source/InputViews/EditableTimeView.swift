@@ -16,3 +16,10 @@ struct EditableTimeView: View {
             .underline()
     }
 }
+
+struct EditableTimeView_Previews: PreviewProvider {
+    static var previews: some View {
+        EditableTimeView(time: "10:00")
+    }
+}
+
