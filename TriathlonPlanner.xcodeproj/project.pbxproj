@@ -18,7 +18,7 @@
 		EADD6166287A54C80065256E /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6165287A54C80065256E /* TransitionModel.swift */; };
 		EAECC2E8287B40340094DAAF /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2E7287B40340094DAAF /* TimeModel.swift */; };
 		EAECC2EB287B4A820094DAAF /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2EA287B4A820094DAAF /* TimePickerView.swift */; };
-		EAECC2ED287B4AB10094DAAF /* EditableTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2EC287B4AB10094DAAF /* EditableTimeView.swift */; };
+		EAECC2ED287B4AB10094DAAF /* TimeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2EC287B4AB10094DAAF /* TimeButtonView.swift */; };
 		EAECC2EF287B4AD80094DAAF /* RaceTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2EE287B4AD80094DAAF /* RaceTypeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +47,7 @@
 		EADD6165287A54C80065256E /* TransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
 		EAECC2E7287B40340094DAAF /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		EAECC2EA287B4A820094DAAF /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
-		EAECC2EC287B4AB10094DAAF /* EditableTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableTimeView.swift; sourceTree = "<group>"; };
+		EAECC2EC287B4AB10094DAAF /* TimeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeButtonView.swift; sourceTree = "<group>"; };
 		EAECC2EE287B4AD80094DAAF /* RaceTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				EAECC2EA287B4A820094DAAF /* TimePickerView.swift */,
-				EAECC2EC287B4AB10094DAAF /* EditableTimeView.swift */,
+				EAECC2EC287B4AB10094DAAF /* TimeButtonView.swift */,
 				EAECC2EE287B4AD80094DAAF /* RaceTypeView.swift */,
 			);
 			path = InputViews;
@@ -239,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAECC2EB287B4A820094DAAF /* TimePickerView.swift in Sources */,
-				EAECC2ED287B4AB10094DAAF /* EditableTimeView.swift in Sources */,
+				EAECC2ED287B4AB10094DAAF /* TimeButtonView.swift in Sources */,
 				EADD6166287A54C80065256E /* TransitionModel.swift in Sources */,
 				EADD615F287A2D4A0065256E /* SettingsView.swift in Sources */,
 				EADD615D287A2D2D0065256E /* TrainingView.swift in Sources */,

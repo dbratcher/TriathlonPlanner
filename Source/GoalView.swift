@@ -30,28 +30,14 @@ struct SportView: View {
                     .font(.subheadline)
             }
             HStack {
-                EditableTimeView(time: "TBD")
+                TimeButtonView(time: TimeModel(hours: 1, minutes: 1, seconds: 1))
                 Text("/ 50yds")
                 Spacer()
                 Text("Total:")
-                EditableTimeView(time: "TBD")
+                TimeButtonView(time: TimeModel(hours: 1, minutes: 1, seconds: 1), showHours: true)
             }
         }
         .frame(maxWidth: 350)
-    }
-}
-
-struct TimeButtonView: View {
-    @ObservedObject var time: TimeModel
-    @State private var showingPopover = false
-    
-    var body: some View {
-        Button("\(time.mm_ss_format)") {
-            showingPopover = true
-        }
-        .popover(isPresented: $showingPopover) {
-            TimePickerView(showHours: false, time: time)
-        }
     }
 }
 
