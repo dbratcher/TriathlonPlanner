@@ -17,24 +17,25 @@ struct HeaderView: View {
 
 
 struct SportView: View {
-    var sportName: String
+    @ObservedObject var sportLegModel: SportLegModel
     var distance: String
+    
     
     var body: some View {
         VStack {
             HStack {
-                Text(sportName)
+                Text(sportLegModel.name)
                     .font(.headline)
                 Spacer()
                 Text(distance)
                     .font(.subheadline)
             }
             HStack {
-                TimeButtonView(time: TimeModel(hours: 1, minutes: 1, seconds: 1))
+                TimeButtonView(time: sportLegModel.splitTime)
                 Text("/ 50yds")
                 Spacer()
                 Text("Total:")
-                TimeButtonView(time: TimeModel(hours: 1, minutes: 1, seconds: 1), showHours: true)
+                TimeButtonView(time: sportLegModel.totalTime, showHours: true)
             }
         }
         .frame(maxWidth: 350)
@@ -64,20 +65,33 @@ struct TotalTimeView: View {
 }
 
 struct AllLegsView: View {
+    @StateObject var swim = SportLegModel(
+        name: "Swim",
+        totalTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
+    )
     @StateObject var transition1 = TransitionModel(name: "Transition 1", time: TimeModel(hours: 0, minutes: 5, seconds: 0))
+    @StateObject var bike = SportLegModel(
+        name: "Bike",
+        totalTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
+    )
     @StateObject var transition2 = TransitionModel(name: "Transition 2", time: TimeModel(hours: 0, minutes: 5, seconds: 0))
+    @StateObject var run = SportLegModel(
+        name: "Run",
+        totalTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
+    )
     
     @Binding var raceType: RaceTypeModel
+    
     var body: some View {
-        SportView(sportName: "Swim", distance: raceType.swimDistance)
+        SportView(sportLegModel: swim, distance: raceType.swimDistance)
         Spacer()
         TransitionView(transition: transition1)
         Spacer()
-        SportView(sportName: "Bike", distance: raceType.bikeDistance)
+        SportView(sportLegModel: bike, distance: raceType.bikeDistance)
         Spacer()
         TransitionView(transition: transition2)
         Spacer()
-        SportView(sportName: "Run", distance: raceType.runDistance)
+        SportView(sportLegModel: run, distance: raceType.runDistance)
     }
 }
 

@@ -16,6 +16,7 @@
 		EADD615F287A2D4A0065256E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD615E287A2D4A0065256E /* SettingsView.swift */; };
 		EADD6162287A53940065256E /* RaceTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6161287A53940065256E /* RaceTypeModel.swift */; };
 		EADD6166287A54C80065256E /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6165287A54C80065256E /* TransitionModel.swift */; };
+		EAE6BEFE287D22A400D712A6 /* SportLegModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6BEFD287D22A400D712A6 /* SportLegModel.swift */; };
 		EAECC2E8287B40340094DAAF /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2E7287B40340094DAAF /* TimeModel.swift */; };
 		EAECC2EB287B4A820094DAAF /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2EA287B4A820094DAAF /* TimePickerView.swift */; };
 		EAECC2ED287B4AB10094DAAF /* TimeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECC2EC287B4AB10094DAAF /* TimeButtonView.swift */; };
@@ -45,6 +46,7 @@
 		EADD615E287A2D4A0065256E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EADD6161287A53940065256E /* RaceTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTypeModel.swift; sourceTree = "<group>"; };
 		EADD6165287A54C80065256E /* TransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
+		EAE6BEFD287D22A400D712A6 /* SportLegModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportLegModel.swift; sourceTree = "<group>"; };
 		EAECC2E7287B40340094DAAF /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		EAECC2EA287B4A820094DAAF /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
 		EAECC2EC287B4AB10094DAAF /* TimeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeButtonView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				EADD6161287A53940065256E /* RaceTypeModel.swift */,
 				EADD6165287A54C80065256E /* TransitionModel.swift */,
 				EAECC2E7287B40340094DAAF /* TimeModel.swift */,
+				EAE6BEFD287D22A400D712A6 /* SportLegModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				EADD6166287A54C80065256E /* TransitionModel.swift in Sources */,
 				EADD615F287A2D4A0065256E /* SettingsView.swift in Sources */,
 				EADD615D287A2D2D0065256E /* TrainingView.swift in Sources */,
+				EAE6BEFE287D22A400D712A6 /* SportLegModel.swift in Sources */,
 				EAECC2E8287B40340094DAAF /* TimeModel.swift in Sources */,
 				EADD615B287A2D120065256E /* GoalView.swift in Sources */,
 				EA8554C8287A1F9F00218C05 /* TriathlonPlannerApp.swift in Sources */,

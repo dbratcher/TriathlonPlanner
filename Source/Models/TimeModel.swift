@@ -30,4 +30,17 @@ class TimeModel: ObservableObject {
     var hh_mm_ss_format: String {
         return String(format: "%d:%02d:%02d", hours, minutes, seconds)
     }
+    
+    func divideBy(_ multiple: Float) -> TimeModel {
+        return TimeModel(hours: 1, minutes: 1, seconds: 1)
+    }
+    
+    func times(_ multiple: Float) -> TimeModel {
+        let newSeconds: Int = Int(Float(seconds) * multiple) % 60
+        let totalMinutes: Int = Int(Float(minutes) * multiple) + Int(Float(seconds) * multiple) / 60
+        let newMinutes: Int = totalMinutes % 60
+        let newHours = Int(Float(hours) * multiple) + totalMinutes / 60
+        
+        return TimeModel(hours: newHours, minutes: newMinutes, seconds: newSeconds)
+    }
 }
