@@ -18,6 +18,7 @@ class TimeModel: ObservableObject {
         assert(minutes < 60, "Minutes must be less than 60 for a time")
         assert(seconds >= 0, "Seconds must be greater than or equal to 0 for a time")
         assert(seconds < 60, "Seconds must be less than 60 for a time")
+        
         self.hours = hours
         self.minutes = minutes
         self.seconds = seconds
@@ -32,10 +33,18 @@ class TimeModel: ObservableObject {
     }
     
     func divideBy(_ multiple: Float) -> TimeModel {
-        return TimeModel(hours: 1, minutes: 1, seconds: 1)
+        assert(multiple > 0, "Can only divide by numbers larger than 0")
+        
+        let newHours = Float(hours) / multiple
+        let newMinutes = Float(minutes) / multiple + (newHours - Float(Int(newHours))) * 60
+        let newSeconds = Float(seconds) / multiple + (newMinutes - Float(Int(newMinutes))) * 60
+        
+        return TimeModel(hours: Int(newHours), minutes: Int(newMinutes), seconds: Int(newSeconds))
     }
     
     func times(_ multiple: Float) -> TimeModel {
+        assert(multiple > 0, "Can only multiply by numbers larger than 0")
+        
         let newSeconds: Int = Int(Float(seconds) * multiple) % 60
         let totalMinutes: Int = Int(Float(minutes) * multiple) + Int(Float(seconds) * multiple) / 60
         let newMinutes: Int = totalMinutes % 60

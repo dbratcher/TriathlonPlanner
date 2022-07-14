@@ -67,17 +67,17 @@ struct TotalTimeView: View {
 struct AllLegsView: View {
     @StateObject var swim = SportLegModel(
         name: "Swim",
-        totalTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
+        splitTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
     )
     @StateObject var transition1 = TransitionModel(name: "Transition 1", time: TimeModel(hours: 0, minutes: 5, seconds: 0))
     @StateObject var bike = SportLegModel(
         name: "Bike",
-        totalTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
+        splitTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
     )
     @StateObject var transition2 = TransitionModel(name: "Transition 2", time: TimeModel(hours: 0, minutes: 5, seconds: 0))
     @StateObject var run = SportLegModel(
         name: "Run",
-        totalTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
+        splitTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
     )
     
     @Binding var raceType: RaceTypeModel

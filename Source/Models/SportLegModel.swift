@@ -9,18 +9,33 @@ import Combine
 
 class SportLegModel: ObservableObject {
     let name: String
+    @Published var splitTime: TimeModel
     @Published var totalTime: TimeModel
     
-    var splitTime: TimeModel {
-        return totalTime.times(2)
-    }
+    private var cancellable1: Cancellable?
+    private var cancellable2: Cancellable?
     
-    var cancellable1 : AnyCancellable?
-    var cancellable2 : AnyCancellable?
-    var cancellable3 : AnyCancellable?
-    
-    init(name: String, totalTime: TimeModel) {
+    init(name: String, splitTime: TimeModel) {
         self.name = name
-        self.totalTime = totalTime
+        self.splitTime = splitTime
+        self.totalTime = splitTime.times(2)
+        
+        cancellable1 = totalTime.$hours.combineLatest(totalTime.$minutes, totalTime.$seconds).sink { [weak self] (newHours, newMinutes, newSeconds) in
+            guard let self = self else { return }
+            
+            let newTime = TimeModel(hours: newHours, minutes: newMinutes, seconds: newSeconds).divideBy(2)
+            self.splitTime.hours = newTime.hours
+            self.splitTime.minutes = newTime.minutes
+            self.splitTime.seconds = newTime.seconds
+        }
+        
+        cancellable2 = splitTime.$hours.combineLatest(splitTime.$minutes, splitTime.$seconds).sink { [weak self] (newHours, newMinutes, newSeconds) in
+            guard let self = self else { return }
+            
+            let newTime = TimeModel(hours: newHours, minutes: newMinutes, seconds: newSeconds).times(2)
+            self.totalTime.hours = newTime.hours
+            self.totalTime.minutes = newTime.minutes
+            self.totalTime.seconds = newTime.seconds
+        }
     }
 }
