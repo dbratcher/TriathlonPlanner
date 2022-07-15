@@ -52,4 +52,14 @@ class TimeModel: ObservableObject {
         
         return TimeModel(hours: newHours, minutes: newMinutes, seconds: newSeconds)
     }
+    
+    func add(_ time: TimeModel) -> TimeModel {
+        let seconds = time.seconds + seconds
+        let secondMinutes = seconds / 60
+        let minutes = time.minutes + minutes + secondMinutes
+        let minuteHours = minutes / 60
+        let hours = time.hours + hours + minuteHours
+        
+        return TimeModel(hours: hours, minutes: minutes - minuteHours * 60, seconds: seconds - secondMinutes * 60)
+    }
 }

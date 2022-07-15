@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA68C2D3288116B10098DABE /* RaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA68C2D2288116B10098DABE /* RaceModel.swift */; };
 		EA8554B9287A1F9F00218C05 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554B8287A1F9F00218C05 /* Tests.swift */; };
 		EA8554BB287A1F9F00218C05 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554BA287A1F9F00218C05 /* LaunchTests.swift */; };
 		EA8554C8287A1F9F00218C05 /* TriathlonPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8554A0287A1F9E00218C05 /* TriathlonPlannerApp.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA68C2D2288116B10098DABE /* RaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceModel.swift; sourceTree = "<group>"; };
 		EA8554A0287A1F9E00218C05 /* TriathlonPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriathlonPlannerApp.swift; sourceTree = "<group>"; };
 		EA8554A2287A1F9F00218C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA8554A7287A1F9F00218C05 /* TriathlonPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriathlonPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,7 @@
 				EADD6165287A54C80065256E /* TransitionModel.swift */,
 				EAECC2E7287B40340094DAAF /* TimeModel.swift */,
 				EAE6BEFD287D22A400D712A6 /* SportLegModel.swift */,
+				EA68C2D2288116B10098DABE /* RaceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				EADD615F287A2D4A0065256E /* SettingsView.swift in Sources */,
 				EADD615D287A2D2D0065256E /* TrainingView.swift in Sources */,
 				EAE6BEFE287D22A400D712A6 /* SportLegModel.swift in Sources */,
+				EA68C2D3288116B10098DABE /* RaceModel.swift in Sources */,
 				EAECC2E8287B40340094DAAF /* TimeModel.swift in Sources */,
 				EADD615B287A2D120065256E /* GoalView.swift in Sources */,
 				EA8554C8287A1F9F00218C05 /* TriathlonPlannerApp.swift in Sources */,

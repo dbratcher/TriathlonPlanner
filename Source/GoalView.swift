@@ -56,57 +56,45 @@ struct TransitionView: View {
 }
 
 struct TotalTimeView: View {
+    @ObservedObject var race: RaceModel
+    
     var body: some View {
         HStack {
             Text("Total Time:")
-            Text("10:00:00")
+            Text(race.totalTime)
         }
     }
 }
 
 struct AllLegsView: View {
-    @StateObject var swim = SportLegModel(
-        name: "Swim",
-        splitTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
-    )
-    @StateObject var transition1 = TransitionModel(name: "Transition 1", time: TimeModel(hours: 0, minutes: 5, seconds: 0))
-    @StateObject var bike = SportLegModel(
-        name: "Bike",
-        splitTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
-    )
-    @StateObject var transition2 = TransitionModel(name: "Transition 2", time: TimeModel(hours: 0, minutes: 5, seconds: 0))
-    @StateObject var run = SportLegModel(
-        name: "Run",
-        splitTime: TimeModel(hours: 0, minutes: 5, seconds: 0)
-    )
-    
-    @Binding var raceType: RaceTypeModel
+    @ObservedObject var race: RaceModel
     
     var body: some View {
-        SportView(sportLegModel: swim, distance: raceType.swimDistance)
+        SportView(sportLegModel: race.swim, distance: race.type.swimDistance)
         Spacer()
-        TransitionView(transition: transition1)
+        TransitionView(transition: race.transition1)
         Spacer()
-        SportView(sportLegModel: bike, distance: raceType.bikeDistance)
+        SportView(sportLegModel: race.bike, distance: race.type.bikeDistance)
         Spacer()
-        TransitionView(transition: transition2)
+        TransitionView(transition: race.transition2)
         Spacer()
-        SportView(sportLegModel: run, distance: raceType.runDistance)
+        SportView(sportLegModel: race.run, distance: race.type.runDistance)
     }
 }
 
 struct GoalView: View {
-    @State private var raceType: RaceTypeModel = RaceTypeModel.raceTypes[0]
     
+    @StateObject var race = RaceModel()
+
     var body: some View {
         VStack {
             HeaderView()
             Spacer()
-            RaceTypeView(raceType: $raceType)
+            RaceTypeView(raceType: $race.type)
             Spacer()
-            AllLegsView(raceType: $raceType)
+            AllLegsView(race: race)
             Spacer()
-            TotalTimeView()
+            TotalTimeView(race: race)
         }
         .frame(maxHeight: 450)
     }
